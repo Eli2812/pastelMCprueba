@@ -1,30 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitio Web</title>
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <ul class="nav navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Pasteles</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="index.php">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="pasteles.php">Ingredientes</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="nosotros.php">Nosotros</a>
-            </li>
-        </ul>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <?php $url="http://".$_SERVER['HTTP_HOST']."/pruebamc" ?>
+    
+  
+
+
+    <nav class="navbar navbar-expand navbar-light bg-light">
+        <div class="nav navbar-nav">
+            <a class="nav-item nav-link active" href="#">Administrador del sitio web <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="<?php echo $url;?>/seccion/ingredientes.php">Crear Ingredientes</a>
+            <a class="nav-item nav-link" href="<?php echo $url;?>/seccion/pastel.php">Crear parteles</a>
+            <a class="nav-item nav-link" href="<?php echo $url;?>/seccion/ingredientesPastel.php">Pastel con ingredientes</a>
+
+        </div>
     </nav>
 
-    <div class="container">
+
+  <div class="container">
     <br/>
-        <div class="row">
+    <div class="row">
